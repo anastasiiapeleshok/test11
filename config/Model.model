@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="5" loadPath="test11" entityName="test11" version="14" name="test11" lastUpdated="2025-01-28T12:51:23.531+02:00" lastUpdatedBy="admin" id="admin:MODEL:test11" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <datalists entityCode="2" entityName="Price Target" version="14" name="Price Target" created="2025-01-28T12:51:23.531+02:00" createdBy="admin" lastUpdated="2025-01-28T12:51:23.531+02:00" lastUpdatedBy="admin" id="Price Target">
+<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="5" loadPath="test11clone" entityName="test11clone" version="14" name="test11clone" lastUpdated="2025-01-28T12:51:23.531+02:00" lastUpdatedBy="admin" id="admin:MODEL:test11" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <datalists entityCode="2" entityName="neeeeeeeeeeeeeeee" version="18" name="neeeeeeeeeeeeeeee" created="2025-01-28T12:51:23.531+02:00" createdBy="admin" lastUpdated="2025-01-28T12:51:23.531+02:00" lastUpdatedBy="admin" id="neeeeeeeeeeeeeeee">
         <dataFields type="text" fieldCode="100" rawType="java.lang.String" allowNull="true" name="Symbol" initialized="true" id="Symbol"/>
         <dataFields type="decimal" format="0.00" fieldCode="101" rawType="java.math.BigDecimal" allowNull="true" name="Price Target" initialized="true" id="Price Target"/>
         <dataFields type="decimal" format="0.00%" fieldCode="102" rawType="java.math.BigDecimal" allowNull="true" name="column3" initialized="true" id="column3"/>
@@ -34,11 +34,35 @@
             <defaultValue source="id"/>
         </dataFields>
     </datalists>
-    <views allColumns="true" default="true" modelView="true" entityName="test11" name="test11" description="Default view for list test11" id="test11"/>
-    <views allColumns="true" default="true" entityName="Price Target" name="Price Target" description="Default view for list Price Target" id="Price Target"/>
-    <views allColumns="true" default="true" entityName="Sector Outlook" name="Sector Outlook" description="Default view for list Sector Outlook" id="Sector Outlook"/>
-    <views allColumns="true" default="true" entityName="Strategy" name="Strategy" description="Default view for list Strategy" id="Strategy"/>
-    <connectors layoutDetected="true" entityName="Price Target" version="29" name="Price Target" created="2025-01-28T12:51:04.269+02:00" createdBy="admin" lastUpdated="2025-01-28T12:51:04.269+02:00" lastUpdatedBy="admin" id="Price Target">
+    <views allColumns="true" default="true" modelView="true" entityName="test11clone" version="21" name="test11clone" description="Default view for list test11" id="test11clone"/>
+    <views allColumns="false" default="true" entityName="neeeeeeeeeeeeeeee" version="21" name="neeeeeeeeeeeeeeee" description="Default view for list neeeeeeeeeeeeeeee" id="neeeeeeeeeeeeeeee">
+        <columns>Symbol</columns>
+        <columns>Price Target</columns>
+        <columns>column3</columns>
+        <columns>sourceName</columns>
+        <columns>lineNumber</columns>
+        <viewMatrix field="Symbol" show="true" column="1" id="neeeeeeeeeeeeeeee.Symbol"/>
+        <viewMatrix field="Price Target" show="true" column="2" id="neeeeeeeeeeeeeeee.Price Target"/>
+        <viewMatrix field="column3" show="true" column="3" id="neeeeeeeeeeeeeeee.column3"/>
+        <viewMatrix field="sourceName" show="true" column="4" id="neeeeeeeeeeeeeeee.sourceName"/>
+        <viewMatrix field="lineNumber" show="true" column="5" id="neeeeeeeeeeeeeeee.lineNumber"/>
+    </views>
+    <views allColumns="false" default="true" entityName="Sector Outlook" name="Sector Outlook" description="Default view for list Sector Outlook" id="Sector Outlook">
+        <columns>Sector</columns>
+        <columns>Outlook</columns>
+        <columns>sourceName</columns>
+        <columns>lineNumber</columns>
+    </views>
+    <views allColumns="false" default="true" entityName="Strategy" name="Strategy" description="Default view for list Strategy" id="Strategy">
+        <columns>Name</columns>
+        <columns>Price to Earnings</columns>
+        <columns>Price to Book</columns>
+        <columns>Dividend Yield</columns>
+        <columns>Expected Return</columns>
+        <columns>sourceName</columns>
+        <columns>lineNumber</columns>
+    </views>
+    <connectors layoutDetected="true" entityName="neeeeeeeeeeeeeeee" version="29" name="Price Target" created="2025-01-28T12:51:04.269+02:00" createdBy="admin" lastUpdated="2025-01-28T12:51:04.269+02:00" lastUpdatedBy="admin" id="Price Target">
         <connectorFields columnIndex="0" ignore="false" mapField="Symbol" type="text" rawType="String" allowNull="true" name="Symbol" id="Symbol"/>
         <connectorFields columnIndex="1" ignore="false" mapField="Price Target" type="decimal" format="0.00" rawType="BigDecimal" allowNull="true" name="Price Target" id="Price Target"/>
         <connectorFields columnIndex="2" ignore="false" mapField="column3" type="decimal" format="0.00%" rawType="BigDecimal" allowNull="true" name="column3" id="column3"/>
