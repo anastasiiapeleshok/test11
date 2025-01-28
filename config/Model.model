@@ -62,24 +62,6 @@
         <columns>sourceName</columns>
         <columns>lineNumber</columns>
     </views>
-    <connectors layoutDetected="true" entityName="neeeeeeeeeeeeeeee" version="29" name="Price Target" created="2025-01-28T12:51:04.269+02:00" createdBy="admin" lastUpdated="2025-01-28T12:51:04.269+02:00" lastUpdatedBy="admin" id="Price Target">
-        <connectorFields columnIndex="0" ignore="false" mapField="Symbol" type="text" rawType="String" allowNull="true" name="Symbol" id="Symbol"/>
-        <connectorFields columnIndex="1" ignore="false" mapField="Price Target" type="decimal" format="0.00" rawType="BigDecimal" allowNull="true" name="Price Target" id="Price Target"/>
-        <connectorFields columnIndex="2" ignore="false" mapField="column3" type="decimal" format="0.00%" rawType="BigDecimal" allowNull="true" name="column3" id="column3"/>
-        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
-        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
-        <dataSource connectorUrl="Stock Tutorial.xlsx">
-            <fileSource>
-                <dataSourceRefs>Stock Tutorial.xlsx</dataSourceRefs>
-            </fileSource>
-            <loadFilter/>
-        </dataSource>
-        <mediaConfig connectorMediaType="excel">
-            <excelMedia>
-                <component componentType="excelworksheet" componentId="rId2" componentName="Price Target" displayName="Price Target"/>
-            </excelMedia>
-        </mediaConfig>
-    </connectors>
     <connectors layoutDetected="true" entityName="Sector Outlook" version="29" name="Sector Outlook" created="2025-01-28T12:51:04.273+02:00" createdBy="admin" lastUpdated="2025-01-28T12:51:04.273+02:00" lastUpdatedBy="admin" id="Sector Outlook">
         <connectorFields columnIndex="0" ignore="false" mapField="Sector" type="text" rawType="String" allowNull="true" name="Sector" id="Sector"/>
         <connectorFields columnIndex="1" ignore="false" mapField="Outlook" type="text" rawType="String" allowNull="true" name="Outlook" id="Outlook"/>
